@@ -5,9 +5,10 @@ function InsultGenerator() {
 
   const fetchInsult = async () => {
     const response = await fetch(
-      "https://evilinsult.com/generate_insult.php?lang=en&type=json"
+      "https://crossorigin.me/https://evilinsult.com/generate_insult.php?lang=en&type=json"
     );
     const data = await response.json();
+    console.log(data)
     setInsult(data.insult);
   };
 
