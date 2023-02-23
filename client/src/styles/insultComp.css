@@ -1,0 +1,37 @@
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    background-color: lightgrey;
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.box {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    background-color: lightsalmon;
+}
+
+
+.compliment, .insult {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+

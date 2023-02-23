@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/insultComp.css"
 
 function ComplimentGenerator() {
     const [compliment, setCompliment] = useState("");
@@ -12,9 +13,11 @@ function ComplimentGenerator() {
     };
 
     return (
-    <div>
-        <button onClick={fetchCompliment}>Compliment me</button>
-        {compliment && <p>{compliment}</p>}
+    <div className="container" >
+        <button className="button" onClick={fetchCompliment}>Compliment me</button>
+        <div className="box">
+            <p className="compliment">{compliment}</p>
+        </div>
     </div>
     );
 }

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../styles/insultComp.css"
 
 function InsultGenerator() {
 const [insult, setInsult] = useState("");
@@ -12,9 +13,11 @@ const fetchInsult = async () => {
     };
 
 return (
-    <div>
-        <button onClick={fetchInsult}>Insult me</button>
-        {insult && <p>{insult}</p>}
+    <div className="container">
+        <button className="button" onClick={fetchInsult}>Insult me</button>
+        <div className="box">
+            <p className="insult">{insult}</p>
+        </div>
     </div>
 );
 }
