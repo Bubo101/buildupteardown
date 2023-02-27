@@ -14,7 +14,9 @@ const fetchInsult = async () => {
 
 return (
     <div className="container">
+        <div className="button">
         <button className="button" onClick={fetchInsult}>Insult me</button>
+        </div>
         <div className="box">
             <p className="insult">{insult}</p>
         </div>
