@@ -14,7 +14,7 @@ function ComplimentGenerator() {
 
     return (
     <div className="container" >
-        <button className="button" onClick={fetchCompliment}>Compliment Me, I deserve it</button>
+        <button className="button" onClick={fetchCompliment}>Compliment Me, I deserve it yo!</button>
         <div className="box">
             <p className="compliment">{compliment}</p>
         </div>
